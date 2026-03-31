@@ -10,8 +10,8 @@ class MineSweeper:
         pyxel.init(self.w, self.h, "Mine-Sweeper BOT", 60)
         pyxel.mouse(True)
 
-        self.grid_size = (8, 8)
-        self.mines = 6
+        self.grid_size = (16, 16)
+        self.mines = 40
         self.starting_point = None
 
         self.tile_scale = self.h // self.grid_size[1]
