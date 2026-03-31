@@ -69,9 +69,9 @@ class MineSweeper:
                 pyxel.rectb(x, y, self.tile_scale, self.tile_scale, 6)
 
                 if (i, j) in self.reveled_tiles:
-                    pyxel.text(x, y, f"{self.how_many_mines_around_me((i, j))[0]}", 2)
+                    pyxel.text(x+self.tile_scale//2-2, y+self.tile_scale//2-3, f"{self.how_many_mines_around_me((i, j))[0]}", 2)
                 elif (i, j) in self.flags:
-                    pyxel.text(x, y, "F", 1)
+                    pyxel.text(x+self.tile_scale//2-2, y+self.tile_scale//2-3, "F", 1)
 
 
 
